@@ -6,6 +6,24 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+
+        p {
+            /* prioridade 3*/
+            background-color: #aaa;
+        }
+
+        .observacao {
+            /* prioridade 2*/
+            background-color: #5f5;
+            padding: 20px;
+            font-size: 40px!important; /* burla a especificidade 1*/
+            border: dashed 5px;
+        }
+
+        p.observacao {
+            /* prioridade 1*/
+            padding: 2px; 
+        }
     </style>
 </head>
 

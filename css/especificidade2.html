@@ -6,6 +6,12 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://specificity.keegan.st/ */
+
+        body { font-size: 40px; }
+        div { background-color: blue; color: #fff; }
+        div[wm-cor] { background-color: darkorange; }
+        div.estilo {background-color: green;}
+        div:hover {background-color: purple;}
     </style>
 </head>
 
